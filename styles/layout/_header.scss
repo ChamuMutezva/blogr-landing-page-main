@@ -1,0 +1,83 @@
+.header {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    border-radius: 0 0 0 100px;
+    padding: 56px 24px;
+
+    background-image: url("../images/bg-pattern-intro.svg"),
+        linear-gradient(to bottom, #FF8F71, #FF3E55);
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu__control {
+        position: relative;
+    }
+
+    .close__menu {
+        position: absolute;
+        left: 0;
+    }
+
+    .intro {
+        margin-top: 95px;
+        color: $white-tx;
+    }
+
+    .intro__header {
+        font-size: calculateRem(36);
+        letter-spacing: -1.08px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 60px;
+
+    }
+
+    .intro__summary {
+        text-align: center;
+        font-size: calculateRem(18);
+        letter-spacing: 1px;
+        font-weight: 200;
+        line-height: 30px;
+    }
+
+    .intro__btns__holder {
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
+        margin-bottom: 98px;
+        justify-content: center;
+    }
+    
+    .btn__intro {
+        font-size: 16px;
+        padding: 1rem 0;
+        border: 1px solid white;
+        border-radius: 28px;
+        font-weight: 700;
+        color: white;
+        flex: 1 1 40%;
+        max-width: 200px;
+    }
+
+}
+
+.nav__list {
+    position: absolute;
+    .nav__list__child {
+        display: none;
+    }
+    .product:hover .product__child {
+        display: block;
+    }
+    .company:hover .company__child {
+        display: block;
+    }
+    .connect:hover .connect__child {
+        display: block;
+    }
+}

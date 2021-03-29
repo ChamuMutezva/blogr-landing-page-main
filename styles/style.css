@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+  border-radius: 0 0 0 100px;
+  padding: 56px 24px;
+  background-image: url("../images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#FF8F71), to(#FF3E55));
+  background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to bottom, #FF8F71, #FF3E55);
+}
+
+.header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .menu__control {
+  position: relative;
+}
+
+.header .close__menu {
+  position: absolute;
+  left: 0;
+}
+
+.header .intro {
+  margin-top: 95px;
+  color: #ffffff;
+}
+
+.header .intro__header {
+  font-size: 2.25rem;
+  letter-spacing: -1.08px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 60px;
+}
+
+.header .intro__summary {
+  text-align: center;
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.header .intro__btns__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  margin-bottom: 98px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .btn__intro {
+  font-size: 16px;
+  padding: 1rem 0;
+  border: 1px solid white;
+  border-radius: 28px;
+  font-weight: 700;
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  max-width: 200px;
+}
+
+.nav__list {
+  position: absolute;
+}
+
+.nav__list .nav__list__child {
+  display: none;
+}
+
+.nav__list .product:hover .product__child {
+  display: block;
+}
+
+.nav__list .company:hover .company__child {
+  display: block;
+}
+
+.nav__list .connect:hover .connect__child {
+  display: block;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+button {
+  background: inherit;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
