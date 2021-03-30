@@ -29,35 +29,46 @@
               <img src="./images/icon-close.svg" alt="" />
             </button>
           </div>
-          <ul class="nav__list">
-            <li class="product">
-              Product
-              <ul class="nav__list__child product__child">
-                <li>Overview</li>
-                <li>Pricing</li>
-                <li>Marketplace</li>
-                <li>Features</li>
-                <li>Integrations</li>
-              </ul>
-            </li>
-            <li class="company">
-              Company
-              <ul class="nav__list__child company__child">
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
-              </ul>
-            </li>
-            <li class="connect">
-              Connect
-              <ul class="nav__list__child connect__child">
-                <li>Contact</li>
-                <li>Newsletter</li>
-                <li>LinkedIn</li>
-              </ul>
-            </li>
-          </ul>
+
+          <div class="nav__list__container">
+            <ul class="nav__list">
+              <li class="product parent__list__item">
+                Product
+                <img src="./images/icon-arrow-dark.svg" alt="">
+                <ul class="nav__list__child product__child">
+                  <li>Overview</li>
+                  <li>Pricing</li>
+                  <li>Marketplace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </ul>
+              </li>
+              <li class="company parent__list__item">
+                Company
+                <img src="./images/icon-arrow-dark.svg" alt="">
+                <ul class="nav__list__child company__child">
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+              </li>
+              <li class="connect parent__list__item">
+                Connect
+                <img src="./images/icon-arrow-dark.svg" alt="">
+                <ul class="nav__list__child connect__child">
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="login__signup">
+              <button class="login">login</button>
+              <button class="signup">Sign up</button>
+            </div>
+          </div>
         </nav>
 
         <div class="intro">
@@ -82,6 +93,7 @@
           </div>
         </div>
       </header>
+      <!--
       Product
 
       Overview
@@ -157,6 +169,8 @@
       Contact
       Newsletter
       LinkedIn
+      -->
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

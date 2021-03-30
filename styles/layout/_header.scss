@@ -52,7 +52,7 @@
         margin-bottom: 98px;
         justify-content: center;
     }
-    
+
     .btn__intro {
         font-size: 16px;
         padding: 1rem 0;
@@ -66,18 +66,42 @@
 
 }
 
-.nav__list {
+.nav__list__container {
     position: absolute;
-    .nav__list__child {
-        display: none;
+    left: 50%;
+    width: 86%;
+    background-color: white;
+    margin-left: -43%;
+   // max-width: 580px;
+    text-align: center;
+    margin-top: 70px;
+    border-radius: 5px;
+
+    .parent__list__item {
+        margin-top: 20px;
+        font-size: calculateRem(18);
+        line-height: 28px;
+        font-weight: 600;
     }
-    .product:hover .product__child {
-        display: block;
+
+    li {
+        list-style: none;       
+    }    
+
+    .nav__list__child li {
+        font-size: 16px;
+        font-weight: 300;
     }
-    .company:hover .company__child {
-        display: block;
-    }
-    .connect:hover .connect__child {
-        display: block;
-    }
+
+}
+.nav__list__child {
+    display: none;
+}
+
+.show__nav__list__child {
+    display: block;
+}
+.rotate__nav__first__child {
+    transform: rotate(180deg);
+    transition: ease-in-out 0.5s;
 }
