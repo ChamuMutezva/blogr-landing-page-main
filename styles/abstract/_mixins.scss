@@ -4,3 +4,9 @@
     //Default font size on html element is 100%, equivalent to 16px;
     @return #{$remSize}rem;
 }
+
+@mixin mQ($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}

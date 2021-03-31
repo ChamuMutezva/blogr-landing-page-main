@@ -72,35 +72,55 @@
     width: 86%;
     background-color: white;
     margin-left: -43%;
-   // max-width: 580px;
+    // max-width: 580px;
     text-align: center;
     margin-top: 70px;
     border-radius: 5px;
 
     .parent__list__item {
         margin-top: 20px;
+    }
+
+    .parent__list__item__btn {
         font-size: calculateRem(18);
         line-height: 28px;
         font-weight: 600;
+        padding: 0.1rem 1rem;
+        border: 2px solid transparent;
+        font-family: 'Overpass', sans-serif;
+        color: $btn-list-color;
     }
 
     li {
-        list-style: none;       
-    }    
-
-    .nav__list__child li {
-        font-size: 16px;
-        font-weight: 300;
+        list-style: none;
     }
 
+    .nav__list__child li {
+        font-size: calculateRem(16);
+        font-weight: 300;
+        margin-top: 22px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    @include mQ(680px) {}
+
 }
+
 .nav__list__child {
     display: none;
 }
 
 .show__nav__list__child {
     display: block;
+    margin-top: 10px;
+    background-color: #979797;
+    width: 85%;
+    margin: auto;
+  
 }
+
 .rotate__nav__first__child {
     transform: rotate(180deg);
     transition: ease-in-out 0.5s;

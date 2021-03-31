@@ -9,6 +9,7 @@
 
 body {
   font-family: 'Overpass', sans-serif;
+  overflow-x: hidden;
 }
 
 button {
@@ -103,9 +104,16 @@ button {
 
 .nav__list__container .parent__list__item {
   margin-top: 20px;
+}
+
+.nav__list__container .parent__list__item__btn {
   font-size: 1.125rem;
   line-height: 28px;
   font-weight: 600;
+  padding: 0.1rem 1rem;
+  border: 2px solid transparent;
+  font-family: 'Overpass', sans-serif;
+  color: #1F3E5A;
 }
 
 .nav__list__container li {
@@ -113,8 +121,12 @@ button {
 }
 
 .nav__list__container .nav__list__child li {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
+  margin-top: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
 }
 
 .nav__list__child {
@@ -123,6 +135,10 @@ button {
 
 .show__nav__list__child {
   display: block;
+  margin-top: 10px;
+  background-color: #979797;
+  width: 85%;
+  margin: auto;
 }
 
 .rotate__nav__first__child {
