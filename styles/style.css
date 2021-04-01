@@ -91,6 +91,21 @@ button {
   max-width: 200px;
 }
 
+@media screen and (min-width: 980px) {
+  .header {
+    padding: 56px 80px;
+  }
+  .header .menu__control {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 63px 167px;
+  }
+}
+
 .nav__list__container {
   position: absolute;
   left: 50%;
@@ -225,6 +240,8 @@ button {
     margin-top: 45px;
     top: 0;
     background-color: inherit;
+    width: 80%;
+    margin-left: -30%;
   }
   .nav__list__container .parent__list__item--btn {
     color: #ffffff;
@@ -240,6 +257,36 @@ button {
   .nav__list__container .arrow__dropdown {
     -webkit-filter: invert(0%) sepia(100%) brightness(133%);
             filter: invert(0%) sepia(100%) brightness(133%);
+  }
+  .nav__list__container .nav__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav__list__container {
+    margin-left: -28%;
+    width: 66%;
+  }
+  .nav__list__container .parent__list__item--btn {
+    padding: 0.1rem 0.9rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+  }
+  .nav__list__container .login {
+    color: #ffffff;
+  }
+  .nav__list__container .signup {
+    color: #FF505C;
+    background-color: #ffffff;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff));
+    background: linear-gradient(to right, #ffffff);
+  }
+  .nav__list__container .nav__list__child--links {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9375rem;
   }
 }
 

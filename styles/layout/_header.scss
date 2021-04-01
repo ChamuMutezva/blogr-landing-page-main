@@ -64,6 +64,19 @@
         max-width: 200px;
     }
 
+    @include mQ(980px) {
+        padding: 56px 80px;
+
+        //hide the menu control for desktop
+        .menu__control {            
+            display: none;
+        }
+    }
+
+    @include mQ(1280px) {
+        padding: 63px 167px;
+    }
+
 }
 
 .nav__list__container {
@@ -149,6 +162,7 @@
             flex-wrap: nowrap;
             flex: 1 1 60%;
             justify-content: space-around;
+
         }
 
         .login__signup {
@@ -166,7 +180,9 @@
         margin-top: 45px;
         top: 0;
         background-color: inherit;
-
+        width: 80%;   
+        margin-left: -30%; 
+        
         .parent__list__item--btn {            
             color: $white-tx
         }
@@ -182,6 +198,36 @@
         }
         .arrow__dropdown {
             filter: invert(0%) sepia(100%) brightness(133%);
+        }
+
+        .nav__list {
+            justify-content: flex-start;
+        }
+        
+    }
+
+    @include mQ(1280px) {
+        margin-left: -28%; 
+        width: 66%;
+        .parent__list__item--btn {            
+            padding: 0.1rem 0.9rem; 
+            font-family: 'Ubuntu', sans-serif;               
+            font-size: calculateRem(16);    
+        }
+
+        .login {           
+            color: $white-tx
+        }
+
+        .signup {
+            color: $red-tx;
+            background-color: $white-bg;
+            background: linear-gradient(to right, $white-bg);
+        }
+        .nav__list__child--links {
+            //color: white;
+            font-family: 'Ubuntu', sans-serif; 
+            font-size: calculateRem(15);
         }
     }
 
