@@ -78,10 +78,10 @@
     border-radius: 5px;
 
     .parent__list__item {
-        margin-top: 20px;
+        margin-top: 17px;
     }
 
-    .parent__list__item__btn {
+    .parent__list__item--btn {
         font-size: calculateRem(18);
         line-height: 28px;
         font-weight: 600;
@@ -96,15 +96,94 @@
     }
 
     .nav__list__child li {
-        font-size: calculateRem(16);
-        font-weight: 300;
         margin-top: 22px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 7px;
+        padding-bottom: 7px;
         border-radius: 5px;
     }
 
-    @include mQ(680px) {}
+    .nav__list__child--links {
+        text-decoration: none;
+        font-size: calculateRem(16);
+        font-weight: 300;
+        color: $btn-list-color;
+    }
+
+    .login__signup {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid grey;
+        //width: 85%;
+        margin: 25px;
+        padding: 25px;
+        align-items: center;
+    }
+
+    .login {
+        width: 137px;
+    }
+
+    .signup {
+        width: 137px;
+        // display: block;
+        // margin: auto;
+        font-size: calculateRem(16);
+        background: linear-gradient(to right, #FF8F71, #FF3E55);
+        padding: 14px;
+        border-radius: 20px;
+        margin-top: 37px;
+        color: $white-tx;
+    }
+
+    @include mQ(680px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 70%;
+        margin-left: -35%;
+
+        .nav__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            flex: 1 1 60%;
+            justify-content: space-around;
+        }
+
+        .login__signup {
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+
+    @include mQ(980px) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-top: 45px;
+        top: 0;
+        background-color: inherit;
+
+        .parent__list__item--btn {            
+            color: $white-tx
+        }
+
+        .login__signup {
+            margin: 0;
+            padding-top: 0;
+            border-top: 0;
+        }
+
+        .signup {
+            margin-top: 0;
+        }
+        .arrow__dropdown {
+            filter: invert(0%) sepia(100%) brightness(133%);
+        }
+    }
 
 }
 
@@ -118,7 +197,7 @@
     background-color: #979797;
     width: 85%;
     margin: auto;
-  
+
 }
 
 .rotate__nav__first__child {

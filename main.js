@@ -1,4 +1,4 @@
-const parent__btn = Array.from(document.querySelectorAll(".parent__list__item__btn"))
+const parent__btn = Array.from(document.querySelectorAll(".parent__list__item--btn"))
 console.log(parent__btn)
 parent__btn.forEach(btn => {
     btn.addEventListener("click", () => {

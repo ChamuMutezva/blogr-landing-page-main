@@ -5,6 +5,12 @@
     @return #{$remSize}rem;
 }
 
+@function calculateListPos($size) {
+    $marginLeft: -$size / 2;
+
+    @return #{$marginLeft};
+}
+
 @mixin mQ($arg) {
     @media screen and (min-width: $arg) {
         @content;
