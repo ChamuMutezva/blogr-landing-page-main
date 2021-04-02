@@ -143,7 +143,7 @@ button {
   padding: 0.1rem 1rem;
   border: 2px solid transparent;
   font-family: 'Overpass', sans-serif;
-  color: #1F3E5A;
+  color: #e1ebf5;
 }
 
 .nav__list__container .parent__list__item--btn:hover + ul {
@@ -169,7 +169,7 @@ button {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 300;
-  color: #1F3E5A;
+  color: #e1ebf5;
 }
 
 .nav__list__container .login__signup {
@@ -361,5 +361,105 @@ button {
 button {
   background: inherit;
   border: none;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  /* place-content: center; */
+  margin-top: 100px;
+  margin-left: 24px;
+  margin-right: 24px;
+  place-items: center;
+  gap: 42px;
+}
+
+.hero .hero__title {
+  font-size: 1.75rem;
+  color: #1F3E5A;
+  letter-spacing: -0.84;
+}
+
+.hero .hero__img {
+  max-width: 100%;
+}
+
+.hero .hero__main__content__subtitle,
+.hero .hero__sub__content__subtitle {
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 32px;
+  font-weight: 400;
+  padding: 0.2rem 1rem;
+  color: #1F3E5A;
+  margin-bottom: 1rem;
+}
+
+.hero .hero__main__content__content,
+.hero .hero__sub__content__content {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  color: #4C5862;
+}
+
+.secondary {
+  position: relative;
+  background-color: #2d2e40;
+  background-image: url("../../images/bg-pattern-circles.svg"), -webkit-gradient(linear, left top, left bottom, from(#2d2e40));
+  background-image: url("../../images/bg-pattern-circles.svg"), linear-gradient(#2d2e40);
+  background-position: 50% -220px;
+  background-repeat: no-repeat;
+  background-size: 165% 87%;
+  margin-top: 272px;
+  border-radius: 0 100px 0 100px;
+}
+
+.secondary .secondary__display {
+  position: relative;
+  top: -200px;
+}
+
+.secondary .secondary__display__img {
+  max-width: 100%;
+}
+
+.secondary .secondary__content {
+  position: relative;
+  top: -161px;
+  padding: 24px 24px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.secondary .secondary__content__title {
+  font-size: 2.5rem;
+  letter-spacing: -1.2px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.secondary .secondary__content__content {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  color: #4C5862;
+  color: #ffffff;
+}
+
+.blogr__display__img {
+  max-width: 100%;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 /*# sourceMappingURL=style.css.map */

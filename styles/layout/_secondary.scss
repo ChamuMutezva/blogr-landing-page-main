@@ -1,0 +1,41 @@
+.secondary {
+    position: relative;
+    background-color: #2d2e40;
+    // background-image: url("../../images/bg-pattern-circles.svg");
+    background-image: url("../../images/bg-pattern-circles.svg"),
+        linear-gradient(#2d2e40);
+    background-position: 50% -220px;
+    background-repeat: no-repeat;
+    background-size: 165% 87%;
+    margin-top: 272px;
+    border-radius: 0 100px 0 100px;
+
+    .secondary__display {
+        // background-image: url("../../images/bg-pattern-circles.svg");
+        position: relative;
+        top: -200px;
+    }
+
+    .secondary__display__img {
+        max-width: 100%;
+    }
+
+    .secondary__content {
+        position: relative;
+        top: -161px;
+        padding: 24px 24px 0;
+        color: $white-tx;
+        text-align: center;
+    }
+
+    .secondary__content__title {
+        font-size: calculateRem(40);
+        letter-spacing: -1.2px;
+        line-height: 55px;
+        margin-bottom: 20px;
+    }
+    .secondary__content__content {
+        @include paraText;
+        color: $white-tx;
+    }
+}

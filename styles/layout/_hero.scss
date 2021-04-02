@@ -1,0 +1,42 @@
+.hero {
+    display: grid;
+    grid-template-rows: auto;
+    /* place-content: center; */
+    //text-align: center;
+    margin-top: 100px;
+    margin-left: 24px;
+    margin-right: 24px;
+    place-items: center;
+    gap: 42px;
+
+    .hero__title {
+        font-size: calculateRem(28);
+        color: $grey-tx;
+        letter-spacing: -0.84;
+    }
+
+    .hero__img {
+        max-width: 100%;
+    }
+
+    .hero__main__content__subtitle,
+    .hero__sub__content__subtitle {
+        text-align: center;
+        font-size: calculateRem(28);
+        line-height: 32px;
+        font-weight: 400;
+        padding: 0.2rem 1rem;
+        color: $grey-tx;
+        margin-bottom: 1rem;
+    }
+
+    .hero__main__content__content,
+    .hero__sub__content__content {
+        text-align: center;
+        font-size: calculateRem(16);
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        color: $lt-grey-tx;
+    }
+}

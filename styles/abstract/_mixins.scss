@@ -16,3 +16,12 @@
         @content;
     }
 }
+
+@mixin paraText {
+    text-align: center;
+    font-size: calculateRem(16);
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    color: $lt-grey-tx;
+}

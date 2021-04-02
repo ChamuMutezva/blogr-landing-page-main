@@ -1,0 +1,8 @@
+@import "./hero";
+@import "./secondary";
+@import "./about__blogr";
+
+main {
+    display: grid;
+    place-content: center;
+}
