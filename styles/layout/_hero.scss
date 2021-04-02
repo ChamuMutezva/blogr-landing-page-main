@@ -21,22 +21,11 @@
 
     .hero__main__content__subtitle,
     .hero__sub__content__subtitle {
-        text-align: center;
-        font-size: calculateRem(28);
-        line-height: 32px;
-        font-weight: 400;
-        padding: 0.2rem 1rem;
-        color: $grey-tx;
-        margin-bottom: 1rem;
+        @include headings;
     }
 
     .hero__main__content__content,
     .hero__sub__content__content {
-        text-align: center;
-        font-size: calculateRem(16);
-        line-height: 28px;
-        letter-spacing: 0.5px;
-        font-weight: 300;
-        color: $lt-grey-tx;
+        @include paraText;
     }
 }

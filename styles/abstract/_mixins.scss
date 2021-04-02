@@ -25,3 +25,13 @@
     font-weight: 300;
     color: $lt-grey-tx;
 }
+
+@mixin headings {
+    text-align: center;
+    font-size: calculateRem(28);
+    line-height: 32px;
+    font-weight: 400;
+    padding: 0.2rem 1rem;
+    color: $grey-tx;
+    margin-bottom: 1rem;
+}
