@@ -21,6 +21,7 @@
     .close__menu {
         position: absolute;
         left: 0;
+        visibility: hidden;
     }
 
     .intro {
@@ -59,16 +60,30 @@
         border: 1px solid white;
         border-radius: 28px;
         font-weight: 700;
-        color: white;
+        color: $white-tx;
         flex: 1 1 40%;
         max-width: 200px;
+    }
+
+    .btn__start {
+        background-color: $white-bg;
+        color: $red-tx;
+    }
+
+    // menu js controlled display
+    .js__close__menu {
+        visibility: visible;
+    }
+
+    .js__open__menu {
+        visibility: hidden;
     }
 
     @include mQ(980px) {
         padding: 56px 80px;
 
         //hide the menu control for desktop
-        .menu__control {            
+        .menu__control {
             display: none;
         }
     }
@@ -89,6 +104,7 @@
     text-align: center;
     margin-top: 70px;
     border-radius: 5px;
+    display: none;
 
     .parent__list__item {
         margin-top: 17px;
@@ -102,6 +118,14 @@
         border: 2px solid transparent;
         font-family: 'Overpass', sans-serif;
         color: $btn-list-color;
+
+        &:hover+ul {
+            display: block;
+            margin-top: 10px;
+            background-color: #979797;
+            width: 85%;
+            margin: auto;
+        }
     }
 
     li {
@@ -139,7 +163,6 @@
 
     .signup {
         width: 137px;
-        // display: block;
         // margin: auto;
         font-size: calculateRem(16);
         background: linear-gradient(to right, #FF8F71, #FF3E55);
@@ -148,13 +171,15 @@
         margin-top: 37px;
         color: $white-tx;
     }
+   
 
     @include mQ(680px) {
-        display: flex;
+        //display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: 70%;
         margin-left: -35%;
+        display: none;
 
         .nav__list {
             display: flex;
@@ -174,16 +199,17 @@
     }
 
     @include mQ(980px) {
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: baseline;
         margin-top: 45px;
         top: 0;
         background-color: inherit;
-        width: 80%;   
-        margin-left: -30%; 
-        
-        .parent__list__item--btn {            
+        width: 80%;
+        margin-left: -30%;
+
+        .parent__list__item--btn {
             color: $white-tx
         }
 
@@ -193,9 +219,14 @@
             border-top: 0;
         }
 
+        .login {
+            color: $white-tx
+        }
+
         .signup {
             margin-top: 0;
         }
+
         .arrow__dropdown {
             filter: invert(0%) sepia(100%) brightness(133%);
         }
@@ -203,30 +234,36 @@
         .nav__list {
             justify-content: flex-start;
         }
-        
+
     }
 
     @include mQ(1280px) {
-        margin-left: -28%; 
-        width: 66%;
-        .parent__list__item--btn {            
-            padding: 0.1rem 0.9rem; 
-            font-family: 'Ubuntu', sans-serif;               
-            font-size: calculateRem(16);    
+        margin-left: -28%;
+        width: 71%;
+
+        .parent__list__item--btn {
+            padding: 0.1rem 0.9rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: calculateRem(16);
+
+            &:hover+ul {
+                background-color: white;
+                //  display: block;
+                // margin-top: 10px;
+            }
         }
 
-        .login {           
-            color: $white-tx
-        }
+      
 
         .signup {
             color: $red-tx;
             background-color: $white-bg;
             background: linear-gradient(to right, $white-bg);
         }
+
         .nav__list__child--links {
-            //color: white;
-            font-family: 'Ubuntu', sans-serif; 
+            // background-color: white;
+            font-family: 'Ubuntu', sans-serif;
             font-size: calculateRem(15);
         }
     }
@@ -237,12 +274,23 @@
     display: none;
 }
 
+.show__nav__list__container {
+    display: block;
+    @include mQ(980px) {
+        display: flex;
+    }
+}
+
 .show__nav__list__child {
     display: block;
     margin-top: 10px;
     background-color: #979797;
     width: 85%;
     margin: auto;
+
+    @include mQ(1280px) {
+        background-color: $white-bg;
+    }
 
 }
 
