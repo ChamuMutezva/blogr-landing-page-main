@@ -108,7 +108,20 @@
 
     .parent__list__item {
         margin-top: 17px;
+
+        &:hover>ul {
+            display: block;
+            margin-top: 10px;
+            background-color: $white-bg;
+            //width: 250px;
+            margin: auto;
+        }
     }
+
+    .nav__list__child {
+        display: none;
+    }
+    
 
     .parent__list__item--btn {
         font-size: calculateRem(18);
@@ -117,15 +130,15 @@
         padding: 0.1rem 1rem;
         border: 2px solid transparent;
         font-family: 'Overpass', sans-serif;
-        color: $btn-list-color;
-
-        &:hover+ul {
+        color: $grey-tx;
+        /*
+        &:hover ~ ul {
             display: block;
             margin-top: 10px;
             background-color: #979797;
             width: 85%;
             margin: auto;
-        }
+        }*/
     }
 
     li {
@@ -143,7 +156,7 @@
         text-decoration: none;
         font-size: calculateRem(16);
         font-weight: 300;
-        color: $btn-list-color;
+        color: $lt-grey-tx;
     }
 
     .login__signup {
@@ -171,7 +184,7 @@
         margin-top: 37px;
         color: $white-tx;
     }
-   
+
 
     @include mQ(680px) {
         //display: flex;
@@ -208,6 +221,12 @@
         background-color: inherit;
         width: 80%;
         margin-left: -30%;
+
+        .nav__list__child {
+            position: fixed;
+            width: 200px;
+        }
+        
 
         .parent__list__item--btn {
             color: $white-tx
@@ -253,7 +272,7 @@
             }
         }
 
-      
+
 
         .signup {
             color: $red-tx;
@@ -270,12 +289,10 @@
 
 }
 
-.nav__list__child {
-    display: none;
-}
 
 .show__nav__list__container {
     display: block;
+
     @include mQ(980px) {
         display: flex;
     }

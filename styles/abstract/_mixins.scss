@@ -35,3 +35,12 @@
     color: $grey-tx;
     margin-bottom: 1rem;
 }
+
+@mixin footerList {    
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;   
+        gap: 20px;    
+}

@@ -94,7 +94,7 @@ button {
 
 .header .btn__start {
   background-color: #ffffff;
-  color: #FF505C;
+  color: #ff525d;
 }
 
 .header .js__close__menu {
@@ -136,6 +136,17 @@ button {
   margin-top: 17px;
 }
 
+.nav__list__container .parent__list__item:hover > ul {
+  display: block;
+  margin-top: 10px;
+  background-color: #ffffff;
+  margin: auto;
+}
+
+.nav__list__container .nav__list__child {
+  display: none;
+}
+
 .nav__list__container .parent__list__item--btn {
   font-size: 1.125rem;
   line-height: 28px;
@@ -143,15 +154,15 @@ button {
   padding: 0.1rem 1rem;
   border: 2px solid transparent;
   font-family: 'Overpass', sans-serif;
-  color: #e1ebf5;
-}
-
-.nav__list__container .parent__list__item--btn:hover + ul {
-  display: block;
-  margin-top: 10px;
-  background-color: #979797;
-  width: 85%;
-  margin: auto;
+  color: #1F3E5A;
+  /*
+        &:hover ~ ul {
+            display: block;
+            margin-top: 10px;
+            background-color: #979797;
+            width: 85%;
+            margin: auto;
+        }*/
 }
 
 .nav__list__container li {
@@ -169,7 +180,7 @@ button {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 300;
-  color: #e1ebf5;
+  color: #4C5862;
 }
 
 .nav__list__container .login__signup {
@@ -267,6 +278,10 @@ button {
     width: 80%;
     margin-left: -30%;
   }
+  .nav__list__container .nav__list__child {
+    position: fixed;
+    width: 200px;
+  }
   .nav__list__container .parent__list__item--btn {
     color: #ffffff;
   }
@@ -306,7 +321,7 @@ button {
     background-color: white;
   }
   .nav__list__container .signup {
-    color: #FF505C;
+    color: #ff525d;
     background-color: #ffffff;
     background: -webkit-gradient(linear, left top, right top, from(#ffffff));
     background: linear-gradient(to right, #ffffff);
@@ -315,10 +330,6 @@ button {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.9375rem;
   }
-}
-
-.nav__list__child {
-  display: none;
 }
 
 .show__nav__list__container {
@@ -497,5 +508,64 @@ main {
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+.footer {
+  background-color: #24242c;
+  margin-top: 92px;
+  border-radius: 0 100px 0 0;
+  padding-bottom: 30px;
+}
+
+.footer .footer__logo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 76px;
+}
+
+.footer .footer__product,
+.footer .footer__company,
+.footer .footer__connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.footer .footer__title {
+  color: #ffffff;
+}
+
+.footer .footer__child li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer .footer__links {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .footer__product, .footer .footer__company, .footer .footer__connect {
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */

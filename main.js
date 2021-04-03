@@ -16,11 +16,13 @@ close__menu.addEventListener("click", () => {
     nav__list__container.classList.toggle("show__nav__list__container")
 })
 
+/*
 parent__btn.forEach(btn => {
     btn.addEventListener("click", () => {
         console.log("parent has been clicked")
         btn.nextElementSibling.classList.toggle("show__nav__list__child")
         btn.firstElementChild.classList.toggle("rotate__nav__first__child")
-        // console.log(parent.firstElementChild)
+        
     })
 })
+*/

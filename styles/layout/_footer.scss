@@ -1,0 +1,35 @@
+.footer {
+    background-color: $very-dark-blue-bg;
+    margin-top: 92px;
+    border-radius: 0 100px 0 0;
+    padding-bottom: 30px;
+
+    .footer__logo__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 76px;
+    }
+
+    .footer__product,
+    .footer__company,
+    .footer__connect {
+        @include footerList;
+    }
+    .footer__title {
+        color: $white-tx;
+    }
+
+    .footer__child li {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .footer__links {
+        text-decoration: none;
+        color: white;
+    }
+    .footer__product, .footer__company, .footer__connect {
+        margin-bottom: 50px;
+    }
+}
