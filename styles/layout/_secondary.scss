@@ -34,6 +34,7 @@
         line-height: 55px;
         margin-bottom: 20px;
     }
+
     .secondary__content__content {
         @include paraText;
         color: $white-tx;
@@ -45,18 +46,40 @@
         padding: 25px;
         display: flex;
         margin-top: 100px;
-         .secondary__display {            
+
+        .secondary__display {
             top: 0;
         }
+
         .secondary__content {
             top: 0;
         }
     }
 
     @include mQ(980px) {
+        position: relative;
+        gap: 100px;
+
         .secondary__content {
             flex: 1 1 50%;
             align-self: center;
+            padding-right: 160px;
+        }
+
+        .secondary__content__title {
+            text-align: left;
+        }
+
+        .secondary__content__content {
+            text-align: left;
+        }
+
+        .secondary__display__img {
+            width: 67%;
+            position: relative;
+            top: 24px;
+            transform: scale(1.7);
+            left: 125px;
         }
     }
 }

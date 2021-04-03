@@ -154,11 +154,16 @@
         <!--hero section-->
         <section class="hero">
           <h2 class="hero__title">Designed for the future</h2>
-          <img
-            class="hero__img"
+          <div class="hero__picture">
+          <picture class="hero__picture__img">
+            <source media="(max-width: 979px)" srcset="./images/illustration-editor-mobile.svg" />
+            <source media="(min-width: 980px)" srcset="./images/illustration-editor-desktop.svg" />
+            <img class="hero__picture__img__img"           
             src="./images/illustration-editor-mobile.svg"
             alt="mobile editor"
           />
+          </picture>
+        </div>
           <div class="hero__main__content">
             <h3 class="hero__main__content__subtitle">
               Introducing an extensible editor
@@ -184,8 +189,8 @@
             </p>
           </div>
         </section>
-
-        <!--secondary section-->
+        
+        <!--secondary section -->
         <section class="secondary">
           <div class="secondary__display">
             <img
@@ -206,15 +211,19 @@
             </p>
           </div>
         </section>
-
-        <!--about blogr section-->
+      
+        <!--about blogr section -->
         <section class="about">
           <div class="about__display">
-            <img
-              class="about__display__img"
+            <picture class="about__display__img">
+              <source media="(max-width: 979px)" srcset="./images/illustration-laptop-mobile.svg" />
+              <source media="(min-width: 980px)" srcset="./images/illustration-laptop-desktop.svg" />
+              <img class="about__display__img__img"             
               src="./images/illustration-laptop-mobile.svg"
               alt="laptop and mobile illustration"
             />
+            </picture>
+           
           </div>
           <div class="about__content">
             <div class="about__content__main">
@@ -238,14 +247,15 @@
             </div>
           </div>
         </section>
+      
       </main>
+      <!--footer -->
       <footer class="footer">
         <div class="footer__list__container">
           <div class="logo__container footer__logo__container">
             <img src="./images/logo.svg" alt="our blogr" />
           </div>
 
-          <!--Product list children -->
           <div class="footer__product">
             <h3 class="footer__title">Product</h3>
             <ul class="footer__product__child footer__child">
@@ -279,7 +289,7 @@
             </ul>
           </div>
 
-          <!--Connect list children -->
+         
           <div class="footer__connect">
             <h3 class="footer__title">Connect</h3>
             <ul class="footer__connect__child footer__child">
@@ -296,6 +306,7 @@
           </div>
         </div>
       </footer>
+  
     </div>
     <script src="main.js"></script>
   </body>

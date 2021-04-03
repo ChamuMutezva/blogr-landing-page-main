@@ -62,7 +62,7 @@
         font-weight: 700;
         color: $white-tx;
         flex: 1 1 40%;
-        max-width: 200px;
+        max-width: 137px;
     }
 
     .btn__start {
@@ -90,7 +90,26 @@
 
     @include mQ(1280px) {
         padding: 63px 167px;
+
+        .intro {
+            margin-top: 118px;
+        }
+
+        .intro__header {
+            font-size: calculateRem(64);
+            letter-spacing: -1.92px;
+        }
+        .intro__summary {           
+            font-size: calculateRem(20);
+            letter-spacing: 0px; 
+            margin-top: 24px;          
+        }
+        .intro__btns__holder {           
+            margin-top: 55px;    
+            margin-bottom: 87px;       
+        }
     }
+
 
 }
 
@@ -121,7 +140,7 @@
     .nav__list__child {
         display: none;
     }
-    
+
 
     .parent__list__item--btn {
         font-size: calculateRem(18);
@@ -226,7 +245,7 @@
             position: fixed;
             width: 200px;
         }
-        
+
 
         .parent__list__item--btn {
             color: $white-tx
