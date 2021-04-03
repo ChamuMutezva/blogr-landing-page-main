@@ -1,9 +1,19 @@
 .about {
     margin-top: 72px;
 
+    .about__content {
+        padding: 0 28px;
+    }
+
     .about__content__main {
         margin-top: 65px;
         margin-bottom: 74px;
+    }
+
+    .about__display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .about__display__img {
@@ -22,5 +32,22 @@
     }
     .about__content__sub__content {
         padding: 10px;
+    }
+
+    @include mQ(680px) {
+        .about__display__img {           
+            transform: scale(1);
+        }
+        .about__content {
+            padding: 0 100px;
+        }
+    }
+
+    @include mQ(980px) {
+        display: flex;
+        flex-wrap: nowrap;
+        .about__content {            
+            flex: 1 1 60%;
+        }
     }
 }

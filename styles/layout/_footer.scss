@@ -18,6 +18,16 @@
     }
     .footer__title {
         color: $white-tx;
+        font-size: calculateRem(18);
+        line-height: 33px;
+        font-family: 'Ubuntu', sans-serif; 
+    }
+
+    .footer__child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        gap: 4px;
     }
 
     .footer__child li {
@@ -28,8 +38,29 @@
     .footer__links {
         text-decoration: none;
         color: white;
+        font-size: calculateRem(18);
+        line-height: 33px;
+        font-weight: 300;
+        opacity: 0.5;
     }
     .footer__product, .footer__company, .footer__connect {
         margin-bottom: 50px;
+    }
+
+    //media queries
+    @include mQ(680px) {
+        .footer__list__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           // place-content: center;
+            align-items: baseline;
+            
+        }
+    }
+
+    @include mQ(980px) {
+        .footer__list__container {          
+            grid-template-columns: 1fr 1fr 1fr 1fr;           
+        }
     }
 }

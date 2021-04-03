@@ -28,4 +28,28 @@
     .hero__sub__content__content {
         @include paraText;
     }
+
+    @include mQ(680px) {
+        padding: 0 6.25rem;
+    }
+
+    @include mQ(980px) {
+        grid-template-columns: 1fr 1fr;
+
+        .hero__title {
+            grid-area: 1/1/2/3;
+        }
+
+        .hero__sub__content {
+            grid-area: 2/1/2/2;
+        }
+
+        .hero__main__content {
+            grid-area: 3/1/3/3;
+        }
+
+        .hero__img {
+           // grid-area: 2/1/2/3;
+        }
+    }
 }

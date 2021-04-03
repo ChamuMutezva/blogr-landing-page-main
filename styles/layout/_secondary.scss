@@ -38,4 +38,25 @@
         @include paraText;
         color: $white-tx;
     }
+
+    @include mQ(680px) {
+        background-size: 50% 100%;
+        background-position: 0% 0px;
+        padding: 25px;
+        display: flex;
+        margin-top: 100px;
+         .secondary__display {            
+            top: 0;
+        }
+        .secondary__content {
+            top: 0;
+        }
+    }
+
+    @include mQ(980px) {
+        .secondary__content {
+            flex: 1 1 50%;
+            align-self: center;
+        }
+    }
 }
