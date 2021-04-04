@@ -45,7 +45,7 @@
         background-position: 0% 0px;
         padding: 25px;
         display: flex;
-        margin-top: 100px;
+        margin-top: 0px;
 
         .secondary__display {
             top: 0;
@@ -57,6 +57,7 @@
     }
 
     @include mQ(980px) {
+
         position: relative;
         gap: 100px;
 

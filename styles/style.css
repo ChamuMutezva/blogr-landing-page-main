@@ -170,7 +170,7 @@ button {
   margin-top: 17px;
 }
 
-.nav__list__container .parent__list__item:hover > ul {
+.nav__list__container .parent__list__item:focus > ul {
   display: block;
   margin-top: 10px;
   background-color: #ffffff;
@@ -336,7 +336,7 @@ button {
     margin-left: -30%;
   }
   .nav__list__container .nav__list__child {
-    position: fixed;
+    position: absolute;
     width: 200px;
   }
   .nav__list__container .parent__list__item--btn {
@@ -520,6 +520,7 @@ button {
     padding-right: 0;
     padding-left: 10.3125rem;
     position: relative;
+    padding-top: 0;
   }
   .hero .hero__main__content {
     -ms-grid-row: 2;
@@ -527,6 +528,7 @@ button {
     -ms-grid-column-span: 1;
     grid-area: 2/1/2/2;
     padding-right: 55px;
+    padding-top: 20px;
   }
   .hero .hero__sub__content {
     -ms-grid-row: 3;
@@ -545,6 +547,13 @@ button {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-area: 2/2/4/3;
+    position: relative;
+  }
+  .hero .hero__picture__img {
+    position: relative;
+    right: -100px;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
   .hero .hero__main__content__subtitle,
   .hero .hero__sub__content__subtitle {
@@ -612,7 +621,7 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 100px;
+    margin-top: 0px;
   }
   .secondary .secondary__display {
     top: 0;
@@ -707,6 +716,9 @@ button {
 }
 
 @media screen and (min-width: 680px) {
+  .about {
+    margin-top: 0px;
+  }
   .about .about__content {
     padding: 0 100px;
   }
@@ -728,12 +740,13 @@ button {
   .about .about__content {
     padding: 0;
   }
+  .about .about__content__main__content,
+  .about .about__content__sub__content {
+    padding-right: 2rem;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .about {
-    margin-top: 224px;
-  }
   .about .about__display {
     position: relative;
   }
@@ -762,6 +775,19 @@ main {
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+@media screen and (min-width: 680px) {
+  main {
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    padding-top: 50px;
+    gap: 200px;
+  }
 }
 
 .footer {

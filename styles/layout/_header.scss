@@ -148,7 +148,7 @@
         margin-top: 17px;
 
 
-        &:hover>ul {
+        &:focus>ul {
             display: block;
             margin-top: 10px;
             background-color: $white-bg;
@@ -289,7 +289,7 @@
         margin-left: -30%;
 
         .nav__list__child {
-            position: fixed;
+            position: absolute;
             width: 200px;
         }
 

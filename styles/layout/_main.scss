@@ -5,4 +5,11 @@
 main {
     display: grid;
     place-content: center;
+    @include mQ(680px) {
+        gap: 50px;
+    }
+    @include mQ(1280px) {
+        padding-top: 50px;
+        gap: 200px;
+    }
 }

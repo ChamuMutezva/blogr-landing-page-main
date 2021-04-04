@@ -18,6 +18,7 @@ close__menu.addEventListener("click", () => {
 
 
 parent__btn.forEach(btn => {
+    
     btn.addEventListener("click", () => {
         console.log(btn.nextElementSibling)
         btn.nextElementSibling.classList.toggle("show__nav__list__child")
