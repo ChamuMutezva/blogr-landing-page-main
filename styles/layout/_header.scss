@@ -116,14 +116,16 @@
             font-size: calculateRem(64);
             letter-spacing: -1.92px;
         }
-        .intro__summary {           
+
+        .intro__summary {
             font-size: calculateRem(20);
-            letter-spacing: 0px; 
-            margin-top: 24px;          
+            letter-spacing: 0px;
+            margin-top: 24px;
         }
-        .intro__btns__holder {           
-            margin-top: 55px;    
-            margin-bottom: 87px;       
+
+        .intro__btns__holder {
+            margin-top: 55px;
+            margin-bottom: 87px;
         }
     }
 
@@ -144,7 +146,7 @@
 
     .parent__list__item {
         margin-top: 17px;
-      
+
 
         &:hover>ul {
             display: block;
@@ -159,6 +161,15 @@
         display: none;
     }
 
+    .show__nav__list__child {
+        display: block;
+        margin-top: 10px;
+        background-color: #979797;
+        width: 85%;
+        margin: auto;
+
+    }
+
 
     .parent__list__item--btn {
         font-size: calculateRem(18);
@@ -171,9 +182,9 @@
 
         &:hover {
             border-bottom: 2px solid $white-tx;
-           
+
         }
-       
+
     }
 
     li {
@@ -340,6 +351,11 @@
             font-family: 'Ubuntu', sans-serif;
             font-size: calculateRem(15);
         }
+
+        .show__nav__list__child {
+            background-color: $white-bg;
+
+        }
     }
 
 }
@@ -353,18 +369,7 @@
     }
 }
 
-.show__nav__list__child {
-    display: block;
-    margin-top: 10px;
-    background-color: #979797;
-    width: 85%;
-    margin: auto;
 
-    @include mQ(1280px) {
-        background-color: $white-bg;
-    }
-
-}
 
 .rotate__nav__first__child {
     transform: rotate(180deg);

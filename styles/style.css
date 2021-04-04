@@ -181,6 +181,14 @@ button {
   display: none;
 }
 
+.nav__list__container .show__nav__list__child {
+  display: block;
+  margin-top: 10px;
+  background-color: #979797;
+  width: 85%;
+  margin: auto;
+}
+
 .nav__list__container .parent__list__item--btn {
   font-size: 1.125rem;
   line-height: 28px;
@@ -379,6 +387,9 @@ button {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.9375rem;
   }
+  .nav__list__container .show__nav__list__child {
+    background-color: #ffffff;
+  }
 }
 
 .show__nav__list__container {
@@ -390,20 +401,6 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-.show__nav__list__child {
-  display: block;
-  margin-top: 10px;
-  background-color: #979797;
-  width: 85%;
-  margin: auto;
-}
-
-@media screen and (min-width: 1280px) {
-  .show__nav__list__child {
-    background-color: #ffffff;
   }
 }
 
