@@ -63,11 +63,28 @@
         color: $white-tx;
         flex: 1 1 40%;
         max-width: 137px;
+        text-align: center;
+
+        &:hover {
+            background-color: $white-bg;
+            color: #FF3E55;
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
 
     .btn__start {
         background-color: $white-bg;
         color: $red-tx;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            background: linear-gradient(#FF7B86);
+            color: $white-tx;
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
 
     // menu js controlled display
@@ -127,6 +144,7 @@
 
     .parent__list__item {
         margin-top: 17px;
+      
 
         &:hover>ul {
             display: block;
@@ -150,14 +168,12 @@
         border: 2px solid transparent;
         font-family: 'Overpass', sans-serif;
         color: $grey-tx;
-        /*
-        &:hover ~ ul {
-            display: block;
-            margin-top: 10px;
-            background-color: #979797;
-            width: 85%;
-            margin: auto;
-        }*/
+
+        &:hover {
+            border-bottom: 2px solid $white-tx;
+           
+        }
+       
     }
 
     li {
@@ -174,8 +190,13 @@
     .nav__list__child--links {
         text-decoration: none;
         font-size: calculateRem(16);
-        font-weight: 300;
+        //font-weight: 300;
         color: $lt-grey-tx;
+
+        &:hover {
+            //text-decoration: underline;
+            font-weight: 700;
+        }
     }
 
     .login__signup {
@@ -191,6 +212,15 @@
 
     .login {
         width: 137px;
+        padding: 14px;
+        border-radius: 20px;
+        background-color: inherit;
+
+        &:hover {
+            background-color: $white-bg;
+            color: #FF3E55;
+            cursor: pointer;
+        }
     }
 
     .signup {
@@ -202,6 +232,12 @@
         border-radius: 20px;
         margin-top: 37px;
         color: $white-tx;
+
+        &:hover {
+            background: linear-gradient(#FF7B86);
+            color: $white-tx;
+            cursor: pointer;
+        }
     }
 
 

@@ -90,11 +90,29 @@ button {
       -ms-flex: 1 1 40%;
           flex: 1 1 40%;
   max-width: 137px;
+  text-align: center;
+}
+
+.header .btn__intro:hover {
+  background-color: #ffffff;
+  color: #FF3E55;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .header .btn__start {
   background-color: #ffffff;
   color: #ff525d;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header .btn__start:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF7B86));
+  background: linear-gradient(#FF7B86);
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .header .js__close__menu {
@@ -171,14 +189,10 @@ button {
   border: 2px solid transparent;
   font-family: 'Overpass', sans-serif;
   color: #1F3E5A;
-  /*
-        &:hover ~ ul {
-            display: block;
-            margin-top: 10px;
-            background-color: #979797;
-            width: 85%;
-            margin: auto;
-        }*/
+}
+
+.nav__list__container .parent__list__item--btn:hover {
+  border-bottom: 2px solid #ffffff;
 }
 
 .nav__list__container li {
@@ -195,8 +209,11 @@ button {
 .nav__list__container .nav__list__child--links {
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 300;
   color: #4C5862;
+}
+
+.nav__list__container .nav__list__child--links:hover {
+  font-weight: 700;
 }
 
 .nav__list__container .login__signup {
@@ -218,6 +235,15 @@ button {
 
 .nav__list__container .login {
   width: 137px;
+  padding: 14px;
+  border-radius: 20px;
+  background-color: inherit;
+}
+
+.nav__list__container .login:hover {
+  background-color: #ffffff;
+  color: #FF3E55;
+  cursor: pointer;
 }
 
 .nav__list__container .signup {
@@ -229,6 +255,13 @@ button {
   border-radius: 20px;
   margin-top: 37px;
   color: #ffffff;
+}
+
+.nav__list__container .signup:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF7B86));
+  background: linear-gradient(#FF7B86);
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 680px) {
@@ -704,31 +737,28 @@ button {
   .about {
     margin-top: 224px;
   }
-}
-
-.about .about__display {
-  position: relative;
-}
-
-.about .about__display__img__img {
-  position: relative;
-  left: -210px;
-}
-
-.about .about__content__main__title, .about .about__content__sub__title {
-  text-align: left;
-  padding: 0;
-}
-
-.about .about__content__main__content, .about .about__content__sub__content {
-  text-align: left;
-  padding: 0;
-}
-
-.about .about__content__sub,
-.about .about__content__main {
-  margin-left: -25px;
-  padding-right: 155px;
+  .about .about__display {
+    position: relative;
+  }
+  .about .about__display__img__img {
+    position: relative;
+    left: -210px;
+  }
+  .about .about__content__main__title,
+  .about .about__content__sub__title {
+    text-align: left;
+    padding: 0;
+  }
+  .about .about__content__main__content,
+  .about .about__content__sub__content {
+    text-align: left;
+    padding: 0;
+  }
+  .about .about__content__sub,
+  .about .about__content__main {
+    margin-left: -25px;
+    padding-right: 155px;
+  }
 }
 
 main {
@@ -745,16 +775,13 @@ main {
 }
 
 .footer .footer__logo__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 76px;
+}
+
+.footer .footer__logo {
+  display: block;
+  margin: auto;
+  /* height: 100%; */
 }
 
 .footer .footer__product,
@@ -826,6 +853,10 @@ main {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding: 76px;
+  }
+  .footer .footer__logo__container {
+    padding: 0px;
   }
 }
 

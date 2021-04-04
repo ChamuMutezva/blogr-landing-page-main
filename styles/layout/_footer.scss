@@ -5,10 +5,15 @@
     padding-bottom: 30px;
 
     .footer__logo__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 76px;
+       // display: flex;
+       // justify-content: center;
+       // align-items: center;
+       padding: 76px;
+    }
+    .footer__logo {
+        display: block;
+        margin: auto;
+        /* height: 100%; */
     }
 
     .footer__product,
@@ -54,8 +59,11 @@
             grid-template-columns: 1fr 1fr;
            // place-content: center;
             align-items: baseline;
-            
+            padding: 76px;
         }
+        .footer__logo__container {            
+            padding: 0px;
+         }
     }
 
     @include mQ(980px) {

@@ -29,14 +29,16 @@
     .about__content__sub__content {
         @include paraText;
     }
+
     .about__content__sub__content {
         padding: 10px;
     }
 
     @include mQ(680px) {
-        .about__display__img {           
-           // transform: scale(1);
+        .about__display__img {
+            // transform: scale(1);
         }
+
         .about__content {
             padding: 0 100px;
         }
@@ -45,9 +47,11 @@
     @include mQ(980px) {
         display: flex;
         flex-wrap: nowrap;
-        .about__content {            
+
+        .about__content {
             flex: 1 1 60%;
         }
+
         .about__content {
             padding: 0;
         }
@@ -55,26 +59,32 @@
 
     @include mQ(1280px) {
         margin-top: 224px;
-    }
-    .about__display {
-       position: relative;
-    }
-    .about__display__img__img {       
-        position: relative;
-        left: -210px;
-    }
-    .about__content__main__title,  .about__content__sub__title {
-        text-align: left;  
-          padding: 0;
-    }
-    .about__content__main__content, .about__content__sub__content {
-        text-align: left;
-        padding: 0;        
-    }
 
-   .about__content__sub ,
-    .about__content__main {        
-        margin-left: -25px;
-        padding-right: 155px;
+        .about__display {
+            position: relative;
+        }
+
+        .about__display__img__img {
+            position: relative;
+            left: -210px;
+        }
+
+        .about__content__main__title,
+        .about__content__sub__title {
+            text-align: left;
+            padding: 0;
+        }
+
+        .about__content__main__content,
+        .about__content__sub__content {
+            text-align: left;
+            padding: 0;
+        }
+
+        .about__content__sub,
+        .about__content__main {
+            margin-left: -25px;
+            padding-right: 155px;
+        }
     }
 }
