@@ -16,7 +16,7 @@ close__menu.addEventListener("click", () => {
     nav__list__container.classList.toggle("show__nav__list__container")
 })
 
-
+/*
 parent__btn.forEach(btn => {
     
     btn.addEventListener("click", () => {
@@ -25,4 +25,4 @@ parent__btn.forEach(btn => {
         btn.firstElementChild.classList.toggle("rotate__nav__first__child")
         
     })
-})
+}) */

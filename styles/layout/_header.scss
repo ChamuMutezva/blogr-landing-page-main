@@ -55,8 +55,8 @@
     }
 
     .btn__intro {
-        font-size: 16px;
-        padding: 1rem 0;
+        font-size: calculateRem(16);
+        padding: 12px 0;
         border: 1px solid white;
         border-radius: 28px;
         font-weight: 700;
@@ -64,12 +64,13 @@
         flex: 1 1 40%;
         max-width: 137px;
         text-align: center;
+        text-decoration: none;
 
         &:hover {
             background-color: $white-bg;
             color: #FF3E55;
             cursor: pointer;
-            text-decoration: underline;
+           // text-decoration: underline;
         }
     }
 
@@ -83,7 +84,7 @@
             background: linear-gradient(#FF7B86);
             color: $white-tx;
             cursor: pointer;
-            text-decoration: underline;
+            //text-decoration: underline;
         }
     }
 
@@ -146,9 +147,11 @@
 
     .parent__list__item {
         margin-top: 17px;
+        position: relative;
+        padding-bottom: 40px;
 
-
-        &:focus>ul {
+        &:focus>ul,
+        &:hover>ul {
             display: block;
             margin-top: 10px;
             background-color: $white-bg;
@@ -159,6 +162,7 @@
 
     .nav__list__child {
         display: none;
+        border-radius: 5px;
     }
 
     .show__nav__list__child {
@@ -181,8 +185,8 @@
         color: $grey-tx;
 
         &:hover {
-            border-bottom: 2px solid $white-tx;
-
+           // border-bottom: 2px solid $white-tx;
+            cursor: pointer;
         }
 
     }
@@ -291,11 +295,23 @@
         .nav__list__child {
             position: absolute;
             width: 200px;
+            top: 60px;
         }
 
 
         .parent__list__item--btn {
-            color: $white-tx
+            color: $white-tx;
+            position: relative;
+
+            &:hover::after{
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 1px;
+                background-color: $white-bg;
+                left: 15%;
+                top: 30px;
+            }
         }
 
         .login__signup {
@@ -305,11 +321,17 @@
         }
 
         .login {
-            color: $white-tx
+            color: $white-tx; 
+            font-size: calculateRem(16);
+            font-weight: 900;
         }
 
         .signup {
             margin-top: 0;
+            background: $white-bg;
+            color: #FF3E55;
+            font-size: calculateRem(16);
+            font-weight: 900;
         }
 
         .arrow__dropdown {

@@ -80,8 +80,8 @@ button {
 }
 
 .header .btn__intro {
-  font-size: 16px;
-  padding: 1rem 0;
+  font-size: 1rem;
+  padding: 12px 0;
   border: 1px solid white;
   border-radius: 28px;
   font-weight: 700;
@@ -91,13 +91,13 @@ button {
           flex: 1 1 40%;
   max-width: 137px;
   text-align: center;
+  text-decoration: none;
 }
 
 .header .btn__intro:hover {
   background-color: #ffffff;
   color: #FF3E55;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .header .btn__start {
@@ -112,7 +112,6 @@ button {
   background: linear-gradient(#FF7B86);
   color: #ffffff;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .header .js__close__menu {
@@ -168,9 +167,12 @@ button {
 
 .nav__list__container .parent__list__item {
   margin-top: 17px;
+  position: relative;
+  padding-bottom: 40px;
 }
 
-.nav__list__container .parent__list__item:focus > ul {
+.nav__list__container .parent__list__item:focus > ul,
+.nav__list__container .parent__list__item:hover > ul {
   display: block;
   margin-top: 10px;
   background-color: #ffffff;
@@ -179,6 +181,7 @@ button {
 
 .nav__list__container .nav__list__child {
   display: none;
+  border-radius: 5px;
 }
 
 .nav__list__container .show__nav__list__child {
@@ -200,7 +203,7 @@ button {
 }
 
 .nav__list__container .parent__list__item--btn:hover {
-  border-bottom: 2px solid #ffffff;
+  cursor: pointer;
 }
 
 .nav__list__container li {
@@ -338,9 +341,20 @@ button {
   .nav__list__container .nav__list__child {
     position: absolute;
     width: 200px;
+    top: 60px;
   }
   .nav__list__container .parent__list__item--btn {
     color: #ffffff;
+    position: relative;
+  }
+  .nav__list__container .parent__list__item--btn:hover::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    background-color: #ffffff;
+    left: 15%;
+    top: 30px;
   }
   .nav__list__container .login__signup {
     margin: 0;
@@ -349,9 +363,15 @@ button {
   }
   .nav__list__container .login {
     color: #ffffff;
+    font-size: 1rem;
+    font-weight: 900;
   }
   .nav__list__container .signup {
     margin-top: 0;
+    background: #ffffff;
+    color: #FF3E55;
+    font-size: 1rem;
+    font-weight: 900;
   }
   .nav__list__container .arrow__dropdown {
     -webkit-filter: invert(0%) sepia(100%) brightness(133%);
